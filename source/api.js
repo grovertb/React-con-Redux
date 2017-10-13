@@ -10,8 +10,8 @@ const api = {
       const response = await fetch(`${baseUrl}/posts/${id}`)
       return await response.json()
     },
-    async getComment(id = 1) {
-      const response = await fetch(`${baseUrl}/${id}/comments`)
+    async getComments(id = 1) {
+      const response = await fetch(`${baseUrl}/posts/${id}/comments`)
       return await response.json()
     }
   },
