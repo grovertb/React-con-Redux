@@ -32,11 +32,11 @@ function Pages() {
         	component={Profile}
         />
         {/* Galería de fotos */}
-        <Route
+        {/* <Route
         	path="/gallery"
         	exact
         	component={Gallery}
-        />
+        /> */}
         {/* Error 404 */}
         <Route component={Error404} />
       </Switch>
