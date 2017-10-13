@@ -20,12 +20,12 @@ module.exports = {
         loader: 'babel-loader',
         exclude : /(node_modules)/,
         query: {
-          // 'es2016', 'es2017',
-          presets: ['react']
+          presets: ['es2016', 'es2017','react'],
+          plugins: ['transform-es2015-modules-commonjs']
         }
       }
     ]
   },
   //permite utilizar los modulos nativos de node
-  target: 'node',
+  target: 'web',
 }
