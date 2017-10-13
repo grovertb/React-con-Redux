@@ -19,6 +19,10 @@ const api = {
     async getSingle(id = 1) {
       const response = await fetch(`${baseUrl}/users/${id}`)
       return await response.json()
+    },
+    async getPosts(id = 1) {
+      const response = await fetch(`${baseUrl}/posts/?userId=${id}`)
+      return await response.json()
     }
   }
 }
