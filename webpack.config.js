@@ -1,4 +1,4 @@
-const server = require('./webpack/webpack.server.config.js')
+const server = require('./webpack/server.config.js')
 
 module.exports = [
   server,

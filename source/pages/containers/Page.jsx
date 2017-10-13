@@ -5,45 +5,43 @@ import {
 } from 'react-router-dom';
 
 import Home from './Home.jsx'
-import About from './About.jsx'
+import Post from './Post.jsx'
+import Profile from './Profile.jsx'
 import Error404 from './Error404.jsx'
 
 function Pages() {
   return (
     <main role="application">
       <Switch>
-        {/* List de artículos */}
+        {/* Lista de artículos */}
         <Route
         	path="/"
         	exact
         	component={Home}
         />
-        <Route
-        	path="/"
-        	exact
-        	component={About}
-        />
         {/* Detalle de artículo */}
-        {/* <Route
+        <Route
         	path="/post/:id"
         	exact
         	component={Post}
-        /> */}
+        />
         {/* Perfil de usuario */}
-        {/* <Route
+        <Route
         	path="/user/:id"
         	exact
         	component={Profile}
-        /> */}
+        />
         {/* Galería de fotos */}
-        {/* <Route
+        <Route
         	path="/gallery"
         	exact
         	component={Gallery}
-        /> */}
+        />
         {/* Error 404 */}
         <Route component={Error404} />
       </Switch>
     </main>
   )
 }
+
+export default Pages
